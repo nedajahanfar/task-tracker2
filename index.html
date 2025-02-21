@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>task tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <form class="input-form">
+
+   <div>
+    <label for="Ename">expense name:</label><br>
+    <input type="text" id="Ename" name="Ename"><br>
+   </div>
+
+   <div>
+    <label for="Eamount">amount:</label><br>
+    <input type="number" id="Eamount" name="amount"><br>
+   </div>
+
+   <div>
+    <label for="options">Choose an option:</label>
+      <select id="options" name="options">
+      <option selected disabled>Select a category</option>
+      <option value="option1">Essential Expenses</option>
+      <option value="option2">Entertainment</option>
+      <option value="option3">shopping</option>
+      </select>
+   </div>
+
+   <div class="submit-btn">
+    <button>Add expense</button>
+   </div>
+
+  </form>
+
+  <div class="history">
+
+    <div class="title">
+      <h2>Transaction history :</h2>
+    </div>
+
+    <ul class="expenses">
+    </ul>
+
+
+    
+  </div>
+
+  <div class="clear-history-container">
+    <button class="clear-history-btn">Clear History</button>
+</div>
+
+
+  <div class="finance-summary">
+
+    <div class="totalRemained"></div>
+
+    <div class="Texpenses"></div>
+
+    <div class="balance"></div>
+
+  </div>
+
+
+  
+ <script src = "main.js"></script>
+
+</body>
+</html>
