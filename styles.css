@@ -1,0 +1,93 @@
+form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 4% auto;
+}
+
+.history{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.expenses{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-weight: 300px;
+}
+
+ul li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+button {
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.delete-btn {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.edit-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.finance-summary {
+  background-color: #ddd;
+  position: fixed;  
+  bottom: 0;       
+  left: 0;
+  width: 100%; 
+  height: 62px;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px;  
+  display: flex;
+  justify-content: space-around; 
+  font-weight: bold;
+  z-index: 1000;
+}
+
+.C-history{
+  padding: 10px;
+  background-color: white;
+  color: brown;
+  margin-left: 40px;
+}
+
+.clear-history-container {
+  position: fixed;
+  bottom: 110px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  z-index: 1001; 
+}
+
+.clear-history-btn{
+  color: brown;
+  background-color: white;
+  border-radius: 20px;
+  padding: 8px;
+  cursor: pointer;
+}
